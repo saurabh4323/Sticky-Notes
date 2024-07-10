@@ -1,0 +1,15 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(178, 203, 203);
+}
+.header button{
+  /* background-color: rgb(224, 250, 24); */
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+}
