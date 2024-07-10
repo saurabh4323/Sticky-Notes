@@ -48,7 +48,7 @@ const Sticky = () => {
       closeDialog();
       getstick();
     } catch (err) {
-      console.log(err);
+      // console.log(err);
     }
   };
 
@@ -61,28 +61,28 @@ const Sticky = () => {
     axiosClient
       .get("/sticksecrets?populate=*")
       .then((res) => {
-        console.log("Data from API:", res.data);
+        // console.log("Data from API:", res.data);
         if (Array.isArray(res.data.data)) {
           const filterstick = res.data.data.filter(
             (stick) => stick.attributes.useremail === useremail
           );
           setSticklist(filterstick);
         } else {
-          console.error("Expected an array of objects, got:", res.data);
+          // console.error("Expected an array of objects, got:", res.data);
         }
       })
       .catch((error) => {
-        console.error("Error fetching sticksecrets:", error);
+        // console.error("Error fetching sticksecrets:", error);
       });
   };
 
-  console.log(sticklist);
+  // console.log(sticklist);
 
   useEffect(() => {
     if (user) {
       setUserEmail(user.primaryEmailAddress.emailAddress);
     } else {
-      console.log("User not logged in");
+      // console.log("User not logged in");
     }
   }, [user]);
 
