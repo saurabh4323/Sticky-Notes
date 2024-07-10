@@ -1,26 +1,15 @@
-/* .content{
+
+
+.whole{
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  align-items: center;
 }
-.create{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border: 1px solid rgb(235, 10, 10); 
-} */
-/* st.css */
 
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
 }
 
 .see{
@@ -30,10 +19,7 @@
 }
 
 .create {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
+  margin-top: 100px;
   cursor: pointer;
   padding: 10px;
   background-color: #007bff;
@@ -42,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 20%;
   height: 30VH;
 }
 
@@ -109,22 +95,45 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
-.sticky-note {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  max-width: 400px;
-  width: 100%;
+.sticky-container {
+  padding: 20px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with minimum width of 300px */
 }
 
-.sticky-note h3 {
+.card {
+  /* height: 200px; */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures image overflow is hidden within cards */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover effect for lifting the card */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
   margin-bottom: 10px;
-  color: #333;
 }
 
-.sticky-note p {
-  color: #555;
+.text {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.sticky-image {
+  width: 100%; /* Ensures image fills its container */
+  height: auto;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }

@@ -12,6 +12,9 @@ const Header = () => {
       <div className="left">
         <img src="vite.svg" alt="" />
       </div>
+      <div className="mid">
+        <h2>Secret Store</h2>
+      </div>
 
       <div className="rig">
         {" "}
