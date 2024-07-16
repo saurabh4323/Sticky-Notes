@@ -12,7 +12,7 @@ const Header = () => {
         <img src="vite.svg" alt="" />
       </div>
       <div className="mid">
-        <h2>Secret Store</h2>
+        <h2>Your Store</h2>
       </div>
 
       <div className="rig">

@@ -10,9 +10,9 @@
   background-color: rgb(91, 140, 169);
 }
 .header button{
-  /* background-color: rgb(224, 250, 24); */
+  /* background-color: rgb(91, 140, 169); */
   border: none;
-  width: 100px;
-  height: 30px;
-  margin-right: 10px;
+  /* width: 100px; */
+  
+  margin-right: 30px;
 }

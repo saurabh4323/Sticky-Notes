@@ -3,7 +3,7 @@ import axios from "axios";
 const API = import.meta.env.VITE_STRAPI_API_KEY;
 
 const axiosClient = axios.create({
-  baseURL: "https://stikcynotes-backend.onrender.com/api",
+  baseURL: "http://localhost:1337/api",
   headers: {
     Authorization: `Bearer ${API}`,
   },
