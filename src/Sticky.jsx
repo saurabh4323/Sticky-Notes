@@ -66,6 +66,7 @@ const Sticky = () => {
       closeDialog();
       getstick();
     } catch (err) {
+<<<<<<< HEAD
       console.error(err);
     }
   };
@@ -85,6 +86,9 @@ const Sticky = () => {
       setShowMatchingStick(true);
     } else {
       alert("No sticky note found with the entered password.");
+=======
+      // console.log(err);
+>>>>>>> 1864b1b7c6ad19fdf0c8c6fadc25d9ed03613bc6
     }
   };
 
@@ -97,23 +101,37 @@ const Sticky = () => {
     axiosClient
       .get("/sticksecrets?populate=*")
       .then((res) => {
+<<<<<<< HEAD
+=======
+        // console.log("Data from API:", res.data);
+>>>>>>> 1864b1b7c6ad19fdf0c8c6fadc25d9ed03613bc6
         if (Array.isArray(res.data.data)) {
           const filterstick = res.data.data.filter(
             (stick) => stick.attributes.useremail === useremail
           );
           setSticklist(filterstick);
         } else {
-          console.error("Expected an array of objects, got:", res.data);
+          // console.error("Expected an array of objects, got:", res.data);
         }
       })
       .catch((error) => {
-        console.error("Error fetching sticksecrets:", error);
+        // console.error("Error fetching sticksecrets:", error);
       });
   };
+
+<<<<<<< HEAD
+  useEffect(() => {
+    if (user) {
+      setUserEmail(user.primaryEmailAddress.emailAddress);
+=======
+  // console.log(sticklist);
 
   useEffect(() => {
     if (user) {
       setUserEmail(user.primaryEmailAddress.emailAddress);
+    } else {
+      // console.log("User not logged in");
+>>>>>>> 1864b1b7c6ad19fdf0c8c6fadc25d9ed03613bc6
     }
   }, [user]);
 
