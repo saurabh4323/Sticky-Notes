@@ -1,9 +1,4 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Uploading WhatsApp Video 2024-07-16 at 16.20.02_0b599076.mp4…
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-  ![image](https://github.com/saurabh4323/Sticky-Notes/assets/138216611/dad2d0b4-78f0-49c3-896e-065864258c36)
